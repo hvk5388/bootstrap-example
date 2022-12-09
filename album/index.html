@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Sheetz · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet" type="text/css">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Customize your food so its ready to order.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm" >
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg> -->
+        <strong>Sheetz</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">MTO</h1>
+        <p class="lead text-muted">Fresh Food, Made to Order</p>
+        <p>
+          <!-- <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal-dialog" role="document" style="display:none" id="modal-dialog-b">
+    <div class="modal-content rounded-6 shadow">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title">Customize Burger</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="closeBurgerModal()"></button>
+      </div>
+      <div class="modal-body py-0">
+        <p>A burger comes with one patty and a bun.</p>
+      </div>
+      <div class="burger-input">
+        <label class="container">Add Second Patty
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Gluten Free Bun Substitution
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Add Cheese
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Add Pickles
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Add Ketchup
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="modal-footer flex-column border-top-0">
+        <button type="button" class="btn btn-lg btn-primary w-100 mx-0 mb-2" onclick="closeBurgerModal()">Save changes</button>
+        <button type="button" class="btn btn-lg btn-light w-100 mx-0" data-bs-dismiss="modal" onclick="closeBurgerModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-dialog" role="document" style="display:none" id="modal-dialog-hd">
+    <div class="modal-content rounded-6 shadow">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title">Customize Hot Dog</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="closeHotDogModal()"></button>
+      </div>
+      <div class="modal-body py-0">
+        <p>This is a modal sheet, a variation of the modal that docs itself to the bottom of the viewport like the newer share sheets in iOS.</p>
+      </div>
+      <div class="hot-dog-input">
+        <label class="container">Gluten Free Bun Substitution
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Add Cheese
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Add Mustard
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Add Ketchup
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Add Relish
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="modal-footer flex-column border-top-0">
+        <button type="button" class="btn btn-lg btn-primary w-100 mx-0 mb-2" onclick="closeHotDogModal()">Save changes</button>
+        <button type="button" class="btn btn-lg btn-light w-100 mx-0" data-bs-dismiss="modal" onclick="closeHotDogModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-dialog" role="document" style="display:none" id="modal-dialog-s">
+    <div class="modal-content rounded-6 shadow">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title">Customize Sub</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="closeSubModal()"></button>
+      </div>
+      <div class="modal-body py-0">
+        <p>Add what you want to the sub.</p>
+      </div>
+      <div class="sub-input">
+        <label class="container">Gluten Free Bun Substitution
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Add Cheese
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Add Ham
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Add Turkey
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Add Lettuce
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Add Tomato
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="modal-footer flex-column border-top-0">
+        <button type="button" class="btn btn-lg btn-primary w-100 mx-0 mb-2" onclick="closeSubModal()">Save changes</button>
+        <button type="button" class="btn btn-lg btn-light w-100 mx-0" data-bs-dismiss="modal" onclick="closeSubModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="burger.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Burger</text></svg> -->
+
+            <div class="card-body">
+              <p class="card-text">Customize with patties, toppings, and condiments.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="displayBurgerModal()">Customize</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="addToCart()">Add to cart</button>
+                </div>
+                <small class="text-muted">$8.99</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="hotdogs.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Hot Dog</text></svg> -->
+
+            <div class="card-body">
+              <p class="card-text">Customize with toppings and condiments.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="displayHotDogModal()">Customize</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="addToCart()">Add to cart</button>
+                </div>
+                <small class="text-muted">$3.99 each</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="sub.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Sub</text></svg> -->
+
+            <div class="card-body">
+              <p class="card-text">Customize with meats, cheeses, toppings, and condiments.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="displaySubModal()">Customize</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="addToCart()">Add to cart</button>
+                </div>
+                <small class="text-muted">$7.99</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+  </div>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+      
+  </body>
+</html>
